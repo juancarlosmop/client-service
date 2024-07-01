@@ -38,5 +38,10 @@ public class ClientController {
     public ResponseEntity<GeneralResponseDTO> deleteClientById(@PathVariable Long id) {
         return ResponseEntity.ok( iClientService.deleteClient(id));
     }
+
+    @GetMapping("/test")
+    public ResponseEntity<String> test(){
+        return ResponseEntity.ok("test");
+    }
 }
 
